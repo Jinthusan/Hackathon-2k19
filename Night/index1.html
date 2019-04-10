@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spot Ticket Booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type = "text/javascript">
+        function getValue() {
+            var txt="Ticket reservation is success";
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Reserve Spot Tickets</h2>
+   <!-- <form action="myFunction()">-->
+        <div class="form-group">
+            <label for="email">Place:</label>
+            <input type="text" class="form-control" id="place" placeholder="Where are you going" name="place">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Date:</label>
+            <input type="date" class="form-control" id="date" placeholder="select date" name="date">
+        </div>
+      <!--  <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+        </div>-->
+        <div class="form-group">
+            <label for="pwd">No of tourists:</label>
+            <input type="text" class="form-control" id="total" placeholder="No of tourists" name="total">
+        </div>
+        <button onclick="getValue()" type="submit" class="btn btn-primary">Confirm</button>
+    <p id="demo"></p>
+  <!--  </form>-->
+</div>
+
+</body>
+</html>

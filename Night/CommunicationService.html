@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type = "text/javascript">
+        function getValue() {
+            var txt="Translation is on processing wait for a second.....";
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+    </script>
+</head>
+<body>
+
+<body>
+<div class="container">
+    <h2>Lanuguage Translator</h2>
+    <img src="translators.jpg" style="width: 1000px;height: 500px;"/>
+    <hr>
+
+    <div class="form-group">
+        <label for="to">Detect Language:</label>
+        <select>
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Japanees">Japanees</option>
+            <option value="French">French</option>
+        </select>
+    </div>
+    <div class="form-group">
+    <label for="to">Convert To:</label>
+    <select>
+        <option value="English">English</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Japanees">Japanees</option>
+        <option value="French">French</option>
+    </select>
+    </div>
+    <button onclick="getValue()" type="submit" class="btn btn-primary">Confirm</button>
+    <p id="demo"></p>
+</div>
+
+
+</body>
+</html>
